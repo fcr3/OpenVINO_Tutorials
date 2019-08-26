@@ -14,6 +14,13 @@ Contains a brief example of how to set up a network, load it into a plugin, and 
 
 Contains a slightly more complicated example, but puts the pieces together from the simple object detection module in order to detect different kinds of wine from a webcam.
 
+## Dependencies
+- OpenVINO 2019 R2
+- OpenCV
+- Numpy
+- jupyter notebook
+- matplotlib
+
 ## Classes (enumerated as follows)
 
 1. Silveroak 2006
