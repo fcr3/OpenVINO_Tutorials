@@ -31,11 +31,20 @@ Contains a brief tutorial showing when/how to reshape your network.
 Contains a not-so-brief but hopefully clear walkthrough on how someone can use multiple networks in an application. 
 
 ## Dependencies
+
+### Packages/Libraries
 - OpenVINO 2019 R2
 - OpenCV
 - Numpy
 - jupyter notebook
 - matplotlib
+
+### Networks
+Download files from here and put in `./reverse_hand` directory!
+https://drive.google.com/open?id=1o7ZeLIcNgb5f-gJh6qwnGM0HJ4TzJQ8T
+
+Download files from here and put in `./reverse_hand_fp16` directory!
+https://drive.google.com/open?id=1uXejmgdDaVr2bsbFrrVdlk5nAMm6Fq2i
 
 ## Classes (enumerated as follows)
 
