@@ -6,6 +6,8 @@ This is a tutorial on how to use OpenVINO if you have an object detection model.
 
 ## Featured Tutorials
 
+These tutorials show how to program using OpenVINO's Python API. Some of the sections within each iPython Notebook are not generalizable, i.e. the networks I use accept input and output detections differently then perhaps other networks. These tutorials are meant for you to extrapolate on your own, since you should know your network and what it accepts as input/what it spits out as output.
+
 ### Simple Object Detection
 
 Contains a brief example of how to set up a network, load it into a plugin, and run inference.
@@ -22,11 +24,7 @@ Basically the same tutorial as the real time object detection one, but using mul
 
 Accompanying the simple object detection tutorial, real-time object detection tutorial, and the async real-time object detection tutorial are also tutorials that pretty much do the same thing but utilize the IECore instead of IEPlugin. IEPlugin may/will be deprecated in future releases of OpenVINO.
 
-### Reshaping Input Layer of IENetwork
-
-Contains a brief tutorial showing when/how to reshape your network.
-
-### Loading Mutliple Networks
+### Loading Mutliple Networks (Also features Reshaping of Input Layer/Checking support for Layers)
 
 Contains a not-so-brief but hopefully clear walkthrough on how someone can use multiple networks in an application. 
 
@@ -46,12 +44,6 @@ https://drive.google.com/open?id=1o7ZeLIcNgb5f-gJh6qwnGM0HJ4TzJQ8T
 Download files from here and put in `./reverse_hand_fp16` directory!
 https://drive.google.com/open?id=1uXejmgdDaVr2bsbFrrVdlk5nAMm6Fq2i
 
-## Classes (enumerated as follows)
-
-1. Silveroak 2006
-2. Silveroak 2015
-3. Twomey 2013
-4. Twomey 2016
 
 ## Conversion from Tensorflow to IR
 This assumes that you have set up the OpenVINO environment. Replace `##` with either `16` or `32`.
@@ -66,6 +58,10 @@ $ mo.py \
 ```
 
 ## Citations
+
+LearOpenCV Website (used for post-processing HandPose):
+
+https://www.learnopencv.com/hand-keypoint-detection-using-deep-learning-and-opencv/
 
 OpenPose Citation:
 
