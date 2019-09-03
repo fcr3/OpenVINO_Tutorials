@@ -1,8 +1,8 @@
-# Wine Detector Using OpenVINO
+# Tutorials For Using OpenVINO
 
 ## Introduction
 
-This is a tutorial on how to use OpenVINO if you have an object detection model. The particular tutorial detects different kinds of wine. Feel free to flip through the Jupyter Notebooks in order to understand how OpenVINO's Python API works. 
+This respository contains a number of tutorials on how to use OpenVINO. In particular, these tutorials teach how someone would like to get started using OpenVINO through the context of object detection and pose estimation. Feel free to flip through the Jupyter Notebooks in order to understand how OpenVINO's Python API works. 
 
 ## Featured Tutorials
 
@@ -38,11 +38,9 @@ Contains a not-so-brief but hopefully clear walkthrough on how someone can use m
 - matplotlib
 
 ### Networks
-Download files from here and put in `./reverse_hand` directory!
-https://drive.google.com/open?id=1o7ZeLIcNgb5f-gJh6qwnGM0HJ4TzJQ8T
-
-Download files from here and put in `./reverse_hand_fp16` directory!
-https://drive.google.com/open?id=1uXejmgdDaVr2bsbFrrVdlk5nAMm6Fq2i
+Downloading these networks and put them in a folder called `handpose_optimized`. Within `handpose_optimized`, create two folders called `fp32` and `fp16`. Put the contents of `reverse_hand` into `fp32` and the contents of `fp16` into `fp16`.
+- Download files from here and put in `./reverse_hand` directory! https://drive.google.com/open?id=1o7ZeLIcNgb5f-gJh6qwnGM0HJ4TzJQ8T
+- Download files from here and put in `./reverse_hand_fp16` directory! https://drive.google.com/open?id=1uXejmgdDaVr2bsbFrrVdlk5nAMm6Fq2i
 
 
 ## Conversion from Tensorflow to IR
