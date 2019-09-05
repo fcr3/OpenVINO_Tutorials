@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This respository contains a number of tutorials on how to use OpenVINO. In particular, these tutorials teach how someone would like to get started using OpenVINO through the context of object detection and pose estimation. Feel free to flip through the Jupyter Notebooks in order to understand how OpenVINO's Python API works. 
+This respository contains a number of tutorials on how to use OpenVINO. In particular, these tutorials teach how someone would like to get started using OpenVINO through the context of object detection and pose estimation. Feel free to flip through the Jupyter Notebooks in order to understand how OpenVINO's Python API works.
 
 ## Featured Tutorials
 
@@ -26,7 +26,7 @@ Accompanying the simple object detection tutorial, real-time object detection tu
 
 ### Loading Mutliple Networks (Also features Reshaping of Input Layer/Checking support for Layers)
 
-Contains a not-so-brief but hopefully clear walkthrough on how someone can use multiple networks in an application. 
+Contains a not-so-brief but hopefully clear walkthrough on how someone can use multiple networks in an application.
 
 ## Dependencies
 
@@ -46,6 +46,7 @@ Downloading these networks and put them in a folder called `handpose_optimized`.
 ## Conversion from Tensorflow to IR
 This assumes that you have set up the OpenVINO environment. Replace `##` with either `16` or `32`.
 
+Linux:
 ```
 $ mo.py \
 >> --input_model wine_export/frozen_inference_graph.pb \
@@ -53,6 +54,11 @@ $ mo.py \
 >> --tensorflow_object_detection_api_pipeline_config wine_export/pipeline.config \
 >> --data_type FP## \
 >> --output_dir wine_optimized/fp##/
+```
+
+Windows:
+```
+C:\Users\<USERNAME>\<INSTALL_DIR>> "C:\Program Files (x86)\IntelSWTools\openvino\deployment_tools\model_optimizer\mo.py" --input_model wine_export\frozen_inference_graph.pb --tensorflow_use_custom_operations_config ssd_support_api_v1.14.json --tensorflow_object_detection_api_pipeline_config wine_export\pipeline.config --data_type FP16 --output_dir test_dir
 ```
 
 ## Citations
@@ -98,5 +104,3 @@ Links to the papers:
 - [Realtime Multi-Person 2D Pose Estimation using Part Affinity Fields](https://arxiv.org/abs/1611.08050)
 - [Hand Keypoint Detection in Single Images using Multiview Bootstrapping](https://arxiv.org/abs/1704.07809)
 - [Convolutional Pose Machines](https://arxiv.org/abs/1602.00134)
-
-
